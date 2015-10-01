@@ -2,37 +2,64 @@ angular.module('Controllers')
   .controller('MainCtrl', function ($scope) {
     $scope.recentActivities = [
       {
-        "name": "Tom Lowe",
-        "page": {
-          "url": "http://blog.newscred.com/pin-this-inside-pinterests-content-marketing-strategy/",
-          "title": "Cool Article",
-          "featured_image": "http://blognewscredcom.c.presscdn.com/wp-content/uploads/2015/10/wpid-thumbnail-0e465d7acb164de735f0a90899e8405c.png"
+        "user": {
+          "name": "Toby Johnson",
+          "title": "North America Direct Marketing Manager",
+          "company": "Schneider Electric",
+          "industry": "Technology",
+          "user_photo": "http://resize.ly/cache/licdn.com/3b3de358f8c9d310ad81a0f4b9fd04c5/50x50.png"
         },
-        "action": "Signed Up",
-        "time": "2015-10-01T17:30:48.163Z",
-        "lead score": 445
+        "page": {
+          "url": "http://blog.newscred.com/lessons-in-blogging-building-an-audience-from-jeff-bullas/",
+          "image": "http://resize.ly/cache/presscdn.com/64f7aa9a40e020a646f1122d2ae18f0a/100x100.png",
+          "title": "Lessons In Blogging + Building An Audience From Jeff Bullas | Newscred Blog"
+        },
+        "timestamp": "5 hours ago"
       },
       {
-        "name": "Rohun Gholkar",
-        "page": {
-          "url": "http://blog.newscred.com/pin-this-inside-pinterests-content-marketing-strategy/",
-          "title": "Cool Article",
-          "featured_image": "http://blognewscredcom.c.presscdn.com/wp-content/uploads/2015/10/wpid-thumbnail-0e465d7acb164de735f0a90899e8405c.png"
+        "user": {
+          "name": "Toby Johnson",
+          "title": "North America Direct Marketing Manager",
+          "company": "Schneider Electric",
+          "industry": "Technology",
+          "user_photo": "http://resize.ly/cache/licdn.com/3b3de358f8c9d310ad81a0f4b9fd04c5/50x50.png"
         },
-        "action": "Signed Up",
-        "time": "2015-10-01T17:30:48.163Z",
-        "lead score": 445
+        "page": {
+          "url": "http://blog.newscred.com/lessons-in-blogging-building-an-audience-from-jeff-bullas/",
+          "image": "http://resize.ly/cache/presscdn.com/64f7aa9a40e020a646f1122d2ae18f0a/100x100.png",
+          "title": "Lessons In Blogging + Building An Audience From Jeff Bullas | Newscred Blog"
+        },
+        "timestamp": "5 hours ago"
       },
       {
-        "name": "Asif Rahman",
-        "page": {
-          "url": "http://blog.newscred.com/pin-this-inside-pinterests-content-marketing-strategy/",
-          "title": "Cool Article",
-          "featured_image": "http://blognewscredcom.c.presscdn.com/wp-content/uploads/2015/10/wpid-thumbnail-0e465d7acb164de735f0a90899e8405c.png"
+        "user": {
+          "name": "Toby Johnson",
+          "title": "North America Direct Marketing Manager",
+          "company": "Schneider Electric",
+          "industry": "Technology",
+          "user_photo": "http://resize.ly/cache/licdn.com/3b3de358f8c9d310ad81a0f4b9fd04c5/50x50.png"
         },
-        "action": "Signed Up",
-        "time": "2015-10-01T17:30:48.163Z",
-        "lead score": 445
+        "page": {
+          "url": "http://blog.newscred.com/lessons-in-blogging-building-an-audience-from-jeff-bullas/",
+          "image": "http://resize.ly/cache/presscdn.com/64f7aa9a40e020a646f1122d2ae18f0a/100x100.png",
+          "title": "Lessons In Blogging + Building An Audience From Jeff Bullas | Newscred Blog"
+        },
+        "timestamp": "5 hours ago"
+      },
+      {
+        "user": {
+          "name": "Toby Johnson",
+          "title": "North America Direct Marketing Manager",
+          "company": "Schneider Electric",
+          "industry": "Technology",
+          "user_photo": "http://resize.ly/cache/licdn.com/3b3de358f8c9d310ad81a0f4b9fd04c5/50x50.png"
+        },
+        "page": {
+          "url": "http://blog.newscred.com/lessons-in-blogging-building-an-audience-from-jeff-bullas/",
+          "image": "http://resize.ly/cache/presscdn.com/64f7aa9a40e020a646f1122d2ae18f0a/100x100.png",
+          "title": "Lessons In Blogging + Building An Audience From Jeff Bullas | Newscred Blog"
+        },
+        "timestamp": "5 hours ago"
       }
     ];
   });

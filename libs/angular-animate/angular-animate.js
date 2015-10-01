@@ -453,7 +453,7 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * The `$animateCss` service is a useful utility to trigger customized CSS-based transitions/keyframes
  * from a JavaScript-based animation or directly from a directive. The purpose of `$animateCss` is NOT
  * to side-step how `$animate` and ngAnimate work, but the goal is to allow pre-existing animations or
- * directives to create more complex animations that can be purely driven using CSS code.
+ * services to create more complex animations that can be purely driven using CSS code.
  *
  * Note that only browsers that support CSS transitions and/or keyframe animations are capable of
  * rendering animations triggered via `$animateCss` (bad news for IE9 and lower).
@@ -3131,7 +3131,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
  * the HTML element that the animation will be triggered on.
  *
  * ## Directive Support
- * The following directives are "animation aware":
+ * The following services are "animation aware":
  *
  * | Directive                                                                                                | Supported Animations                                                     |
  * |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -3178,7 +3178,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
  * }
  * ```
  *
- * The key thing to remember here is that, depending on the animation event (which each of the directives above trigger depending on what's going on) two
+ * The key thing to remember here is that, depending on the animation event (which each of the services above trigger depending on what's going on) two
  * generated CSS classes will be applied to the element; in the example above we have `.ng-enter` and `.ng-enter-active`. For CSS transitions, the transition
  * code **must** be defined within the starting CSS class (in this case `.ng-enter`). The destination class is what the transition will animate towards.
  *
@@ -3220,7 +3220,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
  *
  * ### CSS Class-based Animations
  *
- * Class-based animations (animations that are triggered via `ngClass`, `ngShow`, `ngHide` and some other directives) have a slightly different
+ * Class-based animations (animations that are triggered via `ngClass`, `ngShow`, `ngHide` and some other services) have a slightly different
  * naming convention. Class-based animations are basic enough that a standard transition or keyframe can be referenced on the class being added
  * and removed.
  *
@@ -3744,7 +3744,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
  *
  * ## Using $animate in your directive code
  *
- * So far we've explored how to feed in animations into an Angular application, but how do we trigger animations within our own directives in our application?
+ * So far we've explored how to feed in animations into an Angular application, but how do we trigger animations within our own services in our application?
  * By injecting the `$animate` service into our directive code, we can trigger structural and class-based hooks which can then be consumed by animations. Let's
  * imagine we have a greeting box that shows and hides itself when the data changes
  *
@@ -3815,7 +3815,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
  * (Note that earlier versions of Angular prior to v1.4 required the promise code to be wrapped using `$scope.$apply(...)`. This is not the case
  * anymore.)
  *
- * In addition to the animation promise, we can also make use of animation-related callbacks within our directives and controller code by registering
+ * In addition to the animation promise, we can also make use of animation-related callbacks within our services and controller code by registering
  * an event listener using the `$animate` service. Let's say for example that an animation was triggered on our view
  * routing controller to hook into that:
  *
