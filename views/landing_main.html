@@ -1,23 +1,36 @@
 <div class="wrapper backgroundNC">
-  <div class="container">
-    <div class="row custom-row shadow" ng-repeat="activity in recentActivities">
-      <div class="twelve columns">
-        <div class="timestamp">{{activity.timestamp}}</div>
-        <div class="info-wrapper u-cf">
-          <div class="image-wrapper u-pull-left">
-            <img ng-src="{{activity.user.user_photo}}" alt="" class="avatar"/>
-          </div>
-          <div class="name-wrapper u-pull-left">
-            <h5 class="name">{{activity.user.name}}</h5>
-            <p class="designation">{{activity.user.title}}, {{activity.user.company}}</p>
+  <p class="loading" ng-if="data.loading">Loading...</p>
+  <div class="container full-height">
+    <div class="row full-height">
+      <div class="eight columns">
+        <div class="row custom-row shadow translucent-background" ng-repeat="activity in recentActivities">
+          <div class="twelve columns">
+            <div class="timestamp nc-grey">{{activity.timestamp}}</div>
+            <div class="info-wrapper u-cf">
+              <div class="image-wrapper u-pull-left">
+                <img ng-src="{{activity.user.user_photo}}" alt="" class="avatar"/>
+              </div>
+              <div class="name-wrapper u-pull-left">
+                <h5 class="name nc-red">{{activity.user.name}}</h5>
+                <p class="designation">{{activity.user.title}}, {{activity.user.company}}</p>
+                <a ng-href="{{activity.page.url}}" class="article">
+                  <img ng-src="{{activity.page.url}}" alt="" class="article-image" />
+                  {{activity.page.title}}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="info-wrapper u-cf">
-          <div class="image-wrapper u-pull-left">
-            <img ng-src="{{activity.page.url}}" alt="" class="article-image"/>
+      </div>
+      <div class="four columns full-height">
+        <div class="row half-height">
+          <div class="twelve columns">
+            <h1>Top Grossing Article</h1>
           </div>
-          <div class="name-wrapper u-pull-left">
-            <p><a ng-href="{{activity.page.url}}">{{activity.page.title}}</a></p>
+        </div>
+        <div class="row half-height">
+          <div class="twelve columns">
+            <h1>Top Designation/Something</h1>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 angular.module('Controllers', []);
-angular.module('Directives', []);
+angular.module('Services', []);
 // The application
 var application = angular.module('AsifsHaircutApp',
   [
     'Controllers',
-    'Directives',
+    'Services',
     'ngRoute',
     'ngAnimate'
   ]
