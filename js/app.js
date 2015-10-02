@@ -18,7 +18,7 @@ $.get('https://fast-brushlands-4500.herokuapp.com/recent-activities' + paramStri
 	var source = $("#recent-activities").html();
 	var template = Handlebars.compile(source);
 	var html = template({
-		recentActivities: data.result
+		recentActivities: data.activities
 	});
 	$('#recent-activities-holder').append(html);
 });
