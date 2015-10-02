@@ -15,6 +15,6 @@ gulp.task('watch', function() {
   gulp.watch('css/**/*.css', ['reload']);
   gulp.watch('js/**/*.js', ['reload']);
   gulp.watch(['./**/*.html', './index.html'], ['reload']);
-})
+});
 
 gulp.task('default', ['webserver', 'watch']);
